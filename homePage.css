@@ -1,0 +1,48 @@
+
+body {
+  background-color: #e6e6e6;
+}
+
+h1 {
+  margin-left: 500px;
+}
+
+button {
+  padding: 50px;
+  margin-left: 100px;
+  margin-top: 100px;
+  font-size: 24px;
+}
+
+#Info {
+  padding: 8px;
+  margin-left: 25px;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+section a {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#Logout {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 980px;
+  cursor: pointer;
+}
