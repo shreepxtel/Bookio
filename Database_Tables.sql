@@ -13,6 +13,8 @@ create table computer(
   comp_id serial primary Key,
   comp_type varchar(100) not null,
   comp_location varchar(100) not null
+  comp_os varchar(20) not null,
+  comp_available boolean not null
 );
 
 /*create room table to store information about the rooms available,
@@ -24,6 +26,7 @@ create table room(
   room_type varchar(100) not null,
   room_capacity int not null,
   room_features varchar(200) not null
+  room_available boolean not null
 );
 
 /*create booking table. If a student wants to use a room, they have to book it*/
