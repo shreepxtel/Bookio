@@ -21,10 +21,10 @@ button {
   font-size: 12px;
 }
 
-section a {
-  background-color: #4CAF50;
+#Info {
+  background-color: #37C9EE;
   border: none;
-  color: white;
+  color: black;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -35,14 +35,53 @@ section a {
 }
 
 #Logout {
-  background-color: #4CAF50;
+  background-color: #37C9EE;
   border: none;
-  color: white;
-  padding: 15px 32px;
+  color: black;
+  padding: 20px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin-left: 980px;
+  margin: -100px 980px;
   cursor: pointer;
+}
+
+#date {
+  background-color: #37C9EE;
+  border: none;
+  color: black;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 100px;
+  margin-top: -350px;
+  cursor: pointer;
+}
+
+#BP {
+  padding: 25px 35px;
+  margin-left: 500px;
+}
+
+#BR {
+  padding: 25px 35px;
+  margin-left: 50px;
+  margin-top: 60px;
+}
+
+img {
+  width: 150px;
+  height: 100px;
+  margin-left: 850px;
+  margin-top: 150px;
+}
+
+img Room {
+  width: 150px;
+  height: 100px;
+  margin-left: 250px;
+  margin-top: 150px;
 }
