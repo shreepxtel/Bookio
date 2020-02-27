@@ -1,0 +1,10 @@
+insert into Student (Student_id, Student_password) values (894074, 'NcGAqd6g8XX5');
+insert into Student (Student_id, Student_password) values (918993, 'RWSIbROkv');
+insert into Student (Student_id, Student_password) values (912284, 'AcpDRqUNEA');
+insert into Student (Student_id, Student_password) values (820484, 'VJb7FY9el5h');
+insert into Student (Student_id, Student_password) values (893645, 'tZw2U8DGO');
+insert into Student (Student_id, Student_password) values (963522, 'gNS0IMohyxVg');
+insert into Student (Student_id, Student_password) values (830322, 'ujXsOWb8S7');
+insert into Student (Student_id, Student_password) values (912739, 'ADWdf7Ru');
+insert into Student (Student_id, Student_password) values (920373, '6CNPS0tbqmMe');
+insert into Student (Student_id, Student_password) values (892634, 'Vfk5johZ');
