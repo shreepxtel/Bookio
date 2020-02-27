@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
+<html>
 <body>
   <title>BOOKIO</title>
   <link href="style.css" rel="stylesheet" title="Style">
   <h1>BOOKIO</h1>
-  <section>
+
+  <p id="date"></p>
+
+<section>
   <a id="Info" href="whatIsBookio.html">What is BOOKIO?</a>
   <a id="Logout">Sign Out</a>
 </section>
-  <section>
+<img src="unnamed.jpg" alt="Room">
+<img src="computer.png" alt="PC">
+<section>
   <button id="BR">Book A Room</button>
-  <button id="BP">Book A PC</button>
-  <button id="BL">Book A Laptop</button>
+  <button id="BP">Reserve A Computer</button>
 </section>
+
+<script>
+    n =  new Date();
+    y = n.getFullYear();
+    m = n.getMonth() + 1;
+    d = n.getDate();
+    document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+</script>
 <script type="text/javascript" src='setting.js'></script>
-<script type="text/javascript" src='setting.js'></script>
-  </body>
+</body>
+</html>
