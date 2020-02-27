@@ -1,0 +1,12 @@
+894074, 918993, 912284, 820484, 893645, 963522, 830322, 912739, 920373, 892634
+
+insert into Room (room_id, Room_capacity, room_type, room_features, Room_available) values (101, '6-8 people', 'Computer Room', 'Inc Projector', 'yes');
+insert into Room (room_id, Room_capacity, room_type, room_features, Room_available) values (102, '3 people', 'Teaching room', 'Inc presentation Stand', 'No');
+insert into Room (room_id, Room_capacity, room_type, room_features, Room_available) values (103, '6-8 people', 'Teaching room', 'Inc presentation Stand', 'yes');
+insert into Room (room_id, Room_capacity, room_type, room_features, Room_available) values (104, '4-5 people', 'Teaching room', 'Inc presentation Stand', 'yes');
+insert into Room (room_id, Room_capacity, room_type, room_features, Room_available) values (105, '3 people', 'Teaching room', 'Inc Whiteboard', 'No');
+insert into Room (room_id, Room_capacity, room_type, room_features, Room_available) values (106, '4-5 people', 'Computer Room', 'Inc presentation Stand', 'No');
+insert into Room (room_id, Room_capacity, room_type, room_features, Room_available) values (107, '3 people', 'Teaching room', 'Inc presentation Stand', 'yes');
+insert into Room (room_id, Room_capacity, room_type, room_features, Room_available) values (108, '4-5 people', 'Teaching room', 'Inc Projector', 'No');
+insert into Room (room_id, Room_capacity, room_type, room_features, Room_available) values (109, '3 people', 'Teaching room', 'Inc presentation Stand', 'yes');
+insert into Room (room_id, Room_capacity, room_type, room_features, Room_available) values (110, '6-8 people', 'Teaching room', 'Inc Whiteboard', 'No');
