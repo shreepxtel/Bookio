@@ -4,20 +4,35 @@ ul {list-style-type: none;}
 .navigate {
   margin: 0;
   padding: 10px 0;
-  background-color: #960096;
+  background-color: #252525;
+  color: white;
+  text-align: center;
 }
 
 .navigate li {
   display: inline-block;
-  width: 13.6%;
+  width: 20%;
+}
+
+.header {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #960096;
   color: white;
+  text-align: center;
+}
+
+.header li {
+  display: inline-block;
+  width: 13.6%;
+  color: red;
   text-align: center;
 }
 
 .month {
   padding: 70px 25px;
   width: 100%;
-  background: #1abc9c;
+  background: #820082;
   text-align: center;
 }
 
@@ -45,8 +60,8 @@ ul {list-style-type: none;}
 
 .weekdays {
   margin: 0;
-  padding: 10px 0;
-  background-color: #960096;
+  padding: 10px;
+  background-color: #777;
 }
 
 .weekdays li {
@@ -58,7 +73,7 @@ ul {list-style-type: none;}
 
 .days {
   padding: 10px 0;
-  background: #eee;
+  background: white;
   margin: 0;
 }
 
