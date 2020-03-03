@@ -11,10 +11,17 @@ create table student(
 /*create computer table to store information about computers available*/
 create table computer(
   comp_id serial primary Key,
-  comp_type varchar(100) not null,
   comp_location varchar(100) not null
   comp_os varchar(20) not null,
   comp_available boolean not null
+);
+
+/*create laptop table to store information about laptops available and to book a laptop*/
+create table computer(
+  laptop_id serial primary Key,
+  laptop_location varchar(100) not null
+  laptop_os varchar(20) not null,
+  laptop_available boolean not null
 );
 
 /*create room table to store information about the rooms available,
@@ -37,5 +44,6 @@ create table booking(
   booking_time interval not null,
   student_id int references student(student_id) not null,
   comp_id int references computer(comp_id) not null,
+  laptop_id int references laptop(laptop_id) not null,
   room_id int references room(room_id) not null
 );
