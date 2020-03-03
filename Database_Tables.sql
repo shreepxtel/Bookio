@@ -17,7 +17,7 @@ create table computer(
 );
 
 /*create laptop table to store information about laptops available and to book a laptop*/
-create table computer(
+create table laptop(
   laptop_id serial primary Key,
   laptop_location varchar(100) not null
   laptop_os varchar(20) not null,
