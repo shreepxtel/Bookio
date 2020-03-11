@@ -1,0 +1,30 @@
+<?PHP
+ //getting values posted from html login form into PHP file.
+ $UP_number = $POST['UP number'];
+ $password = $POST['password'];
+
+ //preventing sql injection attacks
+ $UP_number = stripcslashes($UP_number);
+ $password = stripcslashes($password);
+ $UP_number = mysql_real_escape_string($UP_number);
+ $password = mysql_real_escape_string($password);
+
+ //connect to server and select database THIS WILL REQUIRE CHANGING AS MANY VALUES R PLACEHOLDERS
+ mysql_connect("localhost", "root", "");
+ mysql_select_db("Booking_system.sql")
+
+
+ //checking the database for user
+ $result = mysql_query("select * from student where student_id = '$UP_number' and student_password = '$password'")
+          or die("failed tom query database".mysql_error());
+ $row = mysql_fetch_array($result);
+
+ if ($row['Student_id'] == $UP_number && $row['Student_password'] == $password){
+   echo "Login Successful";
+ }
+ else{
+   echo "Login Unsuccessful";
+ }
+
+
+?>
