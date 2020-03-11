@@ -1,3 +1,5 @@
+/*compile database & made sure table creation match inserts in terms of data types etc.*/
+
 create DATABASE booking_system;
 \c booking_system
 
