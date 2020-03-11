@@ -1,11 +1,18 @@
 <!DOCTYPE html5>
-<form action="putPHPfilehere.php" method="post">
-  <div class="loginBox">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+  <title>Login Page</title>
+</head>
+<body>
+  <form action="PHPLogin.php" method="post">   <!---  this is where we would link html to PHP -->
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
 
-    <button type="submit">Login</button>
-  </div>
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit">Login</button>
+  </form>
+</body>
