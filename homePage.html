@@ -1,31 +1,50 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <html>
+<head>
+<title>BOOKIO</title>
+<meta name="width=device-width,initial-scale=1">
+<link href="style.css" rel="stylesheet" title="Style">
+</head>
 <body>
-  <title>BOOKIO</title>
-  <link href="style.css" rel="stylesheet" title="Style">
+<div class="header">
   <h1>BOOKIO</h1>
+</div>
 
-  <p id="date"></p>
+<div class="navbar">
+  <a href='#'> What Is Bookio</a>
+  <a href='#'> Book A Room</a>
+  <a href='#'> Book A Computer</a>
+  <a href='#' style="float:right"> Sign Out</a>
+</div>
 
-<section>
-  <a id="Info" href="whatIsBookio.html">What is BOOKIO?</a>
-  <a id="Logout">Sign Out</a>
-</section>
-<img src="unnamed.jpg" alt="Room">
-<img src="computer.png" alt="PC">
-<section>
-  <button id="BR">Book A Room</button>
-  <button id="BP">Reserve A Computer</button>
-</section>
+<div class ="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Description</h5>
+      <div class="images"
+      style="height:200px;">Image</div>
+      <p>Some Text...</p>
+      <p>whhhwwwwwwwwwwwwwwwwwwwww</p>
+</div>
+<div class="rightcolumn">
+  <div class="card">
+    <h2>About BOOKIO</h2>
+    <div class="images" style="height:100px;">Image</div>
+    <p>sfsfsdfdsfsdsf</p>
+  </div>
 
-<script>
-    n =  new Date();
-    y = n.getFullYear();
-    m = n.getMonth() + 1;
-    d = n.getDate();
-    document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
-</script>
-<script type="text/javascript" src='setting.js'></script>
-</body>
+<div class="card">
+  <h3>Popular Rooms</h3>
+  <div class="images"><p>Image</p></div>
+  <div class="images"><p>Image</p></div>
+  <div class="images"><p>Image</p></div>
+</div>
+</div>
+</div>
+
+
+
+  </body>
 </html>
