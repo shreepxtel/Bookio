@@ -1,0 +1,9 @@
+body{
+  background-color: #e6e6e6;
+  text-align: center;
+}
+form{
+  display: inline-block;
+  border: 3px solid purple;
+  padding: 10px;
+}
