@@ -1,3 +1,5 @@
+//adapting Jack's code to connect our database to login page
+
 <?PHP
  //getting values posted from html login form into PHP file.
  $UP_number = $POST['UP number'];
