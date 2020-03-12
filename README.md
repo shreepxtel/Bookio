@@ -16,8 +16,8 @@
 - Tameem Saleh J S Al-sulaiti(UP951881)
 
 # Built With
--HTML
--CSS
--JAVASCRIPT
--PHP
--POSTGRESQL
+- HTML
+- CSS
+- JAVASCRIPT
+- PHP
+- POSTGRESQL
