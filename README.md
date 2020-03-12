@@ -1,9 +1,5 @@
 ## BOOKIO
-<b> Project name</b> : Your project’s name is the first thing people will see upon scrolling down to your README, and is included upon creation of your README file.
-
 <b>Description</b>: Bookio is a library booking system used to book specific rooms and computers according to the time the user would like to access it. Bookio is all about improving efficiency for the students in ways that students come prepared to the library depending on if they have booked a room or a computer.
-
-<b>Table of Contents </b>: Optionally, include a table of contents in order to allow other people to quickly navigate especially long or detailed READMEs.
 
 <b>Installation</b>: Installation is the next section in an effective README. Tell other users how to install your project locally. Optionally, include a gif to make the process even more clear for other people.
 
@@ -11,6 +7,11 @@
 
 </b>Contributing</b>: Larger projects often have sections on contributing to their project, in which contribution instructions are outlined. Sometimes, this is a separate file. If you have specific contribution preferences, explain them so that other developers know how to best contribute to your work. To learn more about how to help others contribute, check out the guide for setting guidelines for repository contributors.
 
-Credits: Emre Karayalcin(UP898126), Shree Patel(UP918383), Vivian Mbadugha(UP894074), Pramesh Rana(UP862031), Jack Currall(UP885516), Tameem Saleh J S Al-sulaiti(UP951881).
+#AUTHORS Emre Karayalcin(UP898126), Shree Patel(UP918383), Vivian Mbadugha(UP894074), Pramesh Rana(UP862031), Jack Currall(UP885516), Tameem Saleh J S Al-sulaiti(UP951881).
 
-License: Finally, include a section for the license of your project. For more information on choosing a license, check out GitHub’s licensing guide!
+#Built With
+-HTML
+-CSS
+-JAVASCRIPT
+-PHP
+-POSTGRESQL
