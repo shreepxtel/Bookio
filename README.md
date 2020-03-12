@@ -7,9 +7,15 @@
 
 </b>Contributing</b>: Larger projects often have sections on contributing to their project, in which contribution instructions are outlined. Sometimes, this is a separate file. If you have specific contribution preferences, explain them so that other developers know how to best contribute to your work. To learn more about how to help others contribute, check out the guide for setting guidelines for repository contributors.
 
-#AUTHORS Emre Karayalcin(UP898126), Shree Patel(UP918383), Vivian Mbadugha(UP894074), Pramesh Rana(UP862031), Jack Currall(UP885516), Tameem Saleh J S Al-sulaiti(UP951881).
+# AUTHORS
+- Emre Karayalcin(UP898126) 
+- Shree Patel(UP918383) 
+- Vivian Mbadugha(UP894074) 
+- Pramesh Rana(UP862031) 
+- Jack Currall(UP885516) 
+- Tameem Saleh J S Al-sulaiti(UP951881)
 
-#Built With
+# Built With
 -HTML
 -CSS
 -JAVASCRIPT
