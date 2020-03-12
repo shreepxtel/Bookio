@@ -42,8 +42,8 @@ booking_id*/
 create table booking(
   booking_id serial primary key,
   booking_time timestamp not null,
-  student_id varchar(6) references student(student_id) not null,
-  comp_id int references computer(comp_id) not null,
+  student_id varchar(6) references student(student_id),
+  comp_id int references computer(comp_id),
   laptop_id int references laptop(laptop_id),
   room_id varchar(10) references room(room_id)
 );
