@@ -1,28 +1,28 @@
-<?PHP
- //getting values posted from html login form into PHP file.
- $username = $POST['username'];
- $password = $POST['password'];
+<?php
+session_start();
 
- //preventing sql injection attacks
- $username = stripcslashes($username);
- $password = stripcslashes($password);
- $username = mysql_real_escape_string($username);
- $password = mysql_real_escape_string($password);
+require('config.php'); //establishes connection with database
 
- //connect to server and select database THIS WILL REQUIRE CHANGING AS MANY VALUES R PLACEHOLDERS
- mysql_connect("localhost", "root", "");
- mysql_select_db("databaseName")
+if (isset($_POST['submit'])){ //checks if form has been submitted
 
- //checking the database for user
- $result = mysql_query("select * from student where student_id = '$username' and student_password = '$password'")
-          or die("failed tom query database".mysql_error());
- $row = mysql_fetch_array($result);
- if ($row['student_id'] == $username && $row['student_password'] == $password){
-   echo "Login Successful";
- }
- else{
-   echo "Login Unsuccessful";
- }
+  $username = $_POST['uname']; //assiging form values to variables
+  $password = $_POST['psw'];
+
+  //preventing sql injection attacks
+  $username = stripcslashes($username);
+  $password = stripcslashes($password);
+  $username = mysql_real_escape_string($username);
+  $password = mysql_real_escape_string($password);
+
+  //checking database for uname and psw. does this by counting results. either 1 or 0
+  $query = "SELECT * FROM 'student' WHERE student_id='$username' AND student_password='$password'";
+  $result = mysqli_query($link, $query);
+  $count = mysqli_num_rows($result);
+
+  if ($count == 1){ //checking there is a match in db
+    header('Location: homePage.html'); //redirecting user to homepage after loggin in
+  }
+}
 
 
-?>
+ ?>
