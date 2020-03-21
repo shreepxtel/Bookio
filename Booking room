@@ -86,9 +86,9 @@
 	}
 
     </script>
-	
-	<link rel="stylesheet" href="Booking Room.css">
-	
+
+	<link rel="stylesheet" href="Booking_room.css">
+
   </head>
   <body>
   <!-- Optional JavaScript -->
@@ -97,12 +97,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-	<ul class="navigate">
-	<li><a href="home">Home</a></li>
-	<li><a href="book a room">Book a room</a></li>
-	<li><a href="book a laptop">Book a laptop</a></li>
-	<li><a href="logout">Logout</a></li>
-	</ul>
+	<div class="navigate">
+	<a href="homePage.html">Home</a>
+	<a href="book a room">Book a room</a>
+	<a href="book a laptop">Book a laptop</a>
+	<a href="logout">Logout</a>
+	</div>
 
 	<div class="header">
 	<h1>Book a room</h1>
