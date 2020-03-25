@@ -1,26 +1,23 @@
 <?php
+include 'connection.php';
+$conn = OpenConn();
 
-session_start();
-header('location:login.php');
+$username = $_POST['uname'];
+$password = $_POST['psw'];
 
-$con = mysqli_connect('localhost', 'root', '');
+$sql = "SELECT * FROM student WHERE student_id = '$username'"; //querying database to check if username already exists
 
-mysqli_select_db($con, 'userregistration');
-
-$name = $_POST['user'];
-$pass = $_POST['password'];
-
-$s = " select * from usertable where name = '$name'";
-
-$result = mysqli_query($con, $s);
+$result = mysqli_query($conn, $sql);
 
 $num = mysqli_num_rows($result);
 
 if($num == 1) {
   echo " Username Already taken";
+  header('Location: registration.html'); //sends user back to registration page to try again
 } else {
-  $reg = " insert into usertable(name, password) values ('$name', '$pass')";
-  mysqli_query($con, $reg);
+  $sqlInsert = "INSERT INTO student(student_id, student_password) values ('$username', '$password')"; //inserting new user credentials into db
+  mysqli_query($conn, $sqlInsert);
   echo" registration sucess";
+  header('Location: index.html'); //sends user back to login page to use their new login credentials
 }
 ?>
