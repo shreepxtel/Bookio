@@ -1,0 +1,10 @@
+insert into Computer (comp_id, comp_os, comp_available) values ('401c', 'Linux', 'Yes');
+insert into Computer (comp_id, comp_os, comp_available) values ('4e9f', 'Mac', 'no');
+insert into Computer (comp_id, comp_os, comp_available) values ('4d01', 'Mac', 'Yes');
+insert into Computer (comp_id, comp_os, comp_available) values ('48bd', 'Mac', 'Yes');
+insert into Computer (comp_id, comp_os, comp_available) values ('400f', 'Windows 10', 'no');
+insert into Computer (comp_id, comp_os, comp_available) values ('a6b6', 'Windows 10', 'Yes');
+insert into Computer (comp_id, comp_os, comp_available) values ('80c4', 'Windows 10', 'Yes');
+insert into Computer (comp_id, comp_os, comp_available) values ('98b1', 'Mac', 'Yes');
+insert into Computer (comp_id, comp_os, comp_available) values ('b16a', 'Mac', 'no');
+insert into Computer (comp_id, comp_os, comp_available) values ('4a88', 'Mac', 'Yes');

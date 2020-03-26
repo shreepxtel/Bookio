@@ -1,0 +1,10 @@
+insert into Booking (booking_id, booking_time, student_id, room_id, laptop_id) values ('8A4E', '21:16', 894074, 101, 1);
+insert into Booking (booking_id, booking_time, student_id, room_id, laptop_id) values ('16CB', '5:24', 918993, 109, 2);
+insert into Booking (booking_id, booking_time, student_id, room_id, laptop_id) values ('57CD', '4:36', 912284, 108, 3);
+insert into Booking (booking_id, booking_time, student_id, room_id, laptop_id) values ('408D', '17:45', 820484, 104, 4);
+insert into Booking (booking_id, booking_time, student_id, room_id, laptop_id) values ('861D', '6:54', 893645, 103, 5);
+insert into Booking (booking_id, booking_time, student_id, room_id, laptop_id) values ('E279', '7:45', 963522, 109, 6);
+insert into Booking (booking_id, booking_time, student_id, room_id, laptop_id) values ('3F9C', '21:08', 830322, 101, 7);
+insert into Booking (booking_id, booking_time, student_id, room_id, laptop_id) values ('8310', '15:01', 912739, 102, 8);
+insert into Booking (booking_id, booking_time, student_id, room_id, laptop_id) values ('AB32', '8:35', 920373, 105, 9);
+insert into Booking (booking_id, booking_time, student_id, room_id, laptop_id) values ('E67F', '7:28', 892634, 107, 10);
