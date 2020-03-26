@@ -1,76 +1,80 @@
+<!--This php session at the top is to allow the data registered for user login to come straight to this page-->
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <meta charset="utf-8">
-<html>
-<head>
-<title>BOOKIO</title>
-<meta name="width=device-width,initial-scale=1">
-<link href="style.css" rel="stylesheet" title="Style">
+  <html>
+  <head>
+    <title>BOOKIO</title>
+    <meta name="width=device-width,initial-scale=1">
+    <link href="homePage.css" rel="stylesheet" title="Style">
 <script type="text/javascript" src='homePage.js'></script>
-</head>
-<body onload="startTime()">
-  <div id="txt" style="width: 115px"></div>
-<div class="header">
-  <h1>BOOKIO</h1>
-</div>
+  </head>
+  <body onload="startTime()">
+    <div id="txt" style="width: 115px"></div>
+    <div class="header">
+      <h1>BOOKIO</h1>
+    </div>
+<!--Navigation bar-->
+    <div class="navbar">
+      <a href='aboutBookio.html'> What Is Bookio</a>
+      <a href='Booking_Room.html'> Book A Room</a>
+      <a href='Laptop.html'> Book A Computer</a>
+      <a href="login.php" style="float:right"> Sign Out</a>
+    </div>
+<!--Slideshow-->
+    <div class="slideshow-outframe">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+          <img src="unnamed.jpg" style="width:100%">
+      <div class="slideshowText"></div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+        <img src="laptopimg.jpg" style="width:100%">
+      <div class="slideshowText"></div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+        <img src="Lib-Lab.jpg" style="width:100%">
+      <div class="slideshowText"></div>
+    </div>
+<!--Buttons for back and forth for the slideshow-->
+        <a class="prev"
+        onclick="plusSlides(-1)">&#10094;</a>
 
-<div class="navbar">
-  <a href='aboutBookio.html'> What Is Bookio</a>
-  <a href='#'> Book A Room</a>
-  <a href='#'> Book A Computer</a>
-  <a href="loginPage.html" style="float:right"> Sign Out</a>
-</div>
+        <a class="next"
+        onclick="plusSlides(1)">&#10095;</a>
+    </div>
 
-<div class="slideshow-outframe">
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 3</div>
-    <img src="unnamed.jpg" style="width:100%">
-    <div class="slideshowText">Caption</div>
-  </div>
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 3</div>
-    <img src="computer.png" style="width:100%">
-    <div class="slideshowText">Caption</div>
-  </div>
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 3</div>
-    <img src="Lib-Lab.jpg" style="width:100%">
-    <div class="slideshowText">Caption</div>
-  </div>
+    <br>
 
-  <a class="prev"
-  onclick="plusSlides(-1)">&#10094;</a>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
 
-  <a class="next"
-  onclick="plusSlides(1)">&#10095;</a>
-</div>
-
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div>
-<div class ="row">
-  <div class="leftcolumn">
-    <div class="card">
-      <h2>TITLE HEADING</h2>
-      <h5>Description</h5>
-      <img class="images" src="unnamed.jpg" style="width:350px;"></img>
-      <p>Some Text...</p>
-      <p>whhhwwwwwwwwwwwwwwwwwwwww</p>
-</div>
-<div class="rightcolumn">
-  <div class="card">
-    <h2>About BOOKIO</h2>
-    <img class="images" src="computer.png" style="height:100px;"></img>
-    <a href="aboutBookio.html">Click Here</a>
-    <p>sfsfsdfdsfsdsf</p>
-  </div>
-</div>
-</div>
+    <div class ="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2>Room Booking</h2>
+        <img class="images" src="unnamed.jpg" style="width:350px;"></img>
+      <a href="Booking_Room.html">Click here for room booking</a>
+    </div>
+    <div class="rightcolumn">
+      <div class="card">
+    <h2>BOOKIO Gallery</h2>
+      <img class="images" src="computer.png" style="height:100px;"></img>
+      <a href="gallery.html">Click Here</a>
+        </div>
+      </div>
+    </div>
 
 <script>
+
+//This is for the slideshow on the home page which goes through pictures of rooms and PC's that our system offers to the user.
 var slideIndex = 1;
 showSlides(slideIndex);
 
