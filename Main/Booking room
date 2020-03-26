@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+
+		<link href='packages/core/main.css' rel='stylesheet' />
+		<link href='packages/daygrid/main.css' rel='stylesheet' />
+		<link href='packages/timegrid/main.css' rel='stylesheet' />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+		<script src='packages/core/main.js'></script>
+		<script src='packages/daygrid/main.js'></script>
+		<script src='packages/timegrid/main.js'></script>
+		<script src='packages/interaction/main.js'></script>
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+
+	var sDate, eDate, eventList, cal, os;
+	startup();
+
+	function loadEvents() {
+		var d1 = new Date();
+		var d2 = new Date();
+		var d3 = new Date();
+
+		d1.setHours(12);
+		d2.setHours(15);
+		d3.setHours(16);
+
+		d1.setMinutes(0);
+		d2.setMinutes(0);
+		d3.setMinutes(0);
+
+		this.eventList =
+			[{
+				title: 'Laptop 1 - Linux device',
+				start: d1
+			},
+			{
+				title: 'Laptop 2 - Windows device',
+				start: d2,
+				end: d3
+			}];
+	}
+
+	function startup(){
+	document.addEventListener('DOMContentLoaded', function() {
+		loadEvents();
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          plugins: [ 'timeGrid', 'interaction' ],
+		  defaultView: 'timeGridWeek',
+		  nowIndicator: true,
+		  now: Date.now(),
+		  events: eventList
+        });
+
+		calendar.on('dateClick', function(info) {
+			$('#exampleModalCenter').modal('show');
+			$("#exampleModalCenter .modal-title").text('Make new reservation');
+			$("#exampleModalCenter #startDate").text(info.date.toLocaleString());
+			sDate = new Date(info.date.toISOString());
+			var endHrs = info.date.getHours()+1;
+			eDate = new Date(info.date.toISOString());
+			eDate.setHours(endHrs);
+			$("#exampleModalCenter #endDate").text(eDate.toLocaleString());
+			os = $("#exampleModalCenter #os").val()
+		});
+		cal = calendar;
+        calendar.render();
+      });
+	}
+
+	function submitPressed() {
+		var booking = [{
+				title: 'Booking ' + os + ' device',
+				start: sDate,
+				end: eDate
+			}];
+		cal.addEventSource(booking);
+		$('#exampleModalCenter').modal('hide');
+		cal.render();
+	}
+
+    </script>
+
+	<link rel="stylesheet" href="Booking_room.css">
+
+  </head>
+  <body>
+  <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<div class="navigate">
+	<a href="homePage.html">Home</a>
+	<a href="book a room">Book a room</a>
+	<a href="book a laptop">Book a laptop</a>
+	<a href="logout">Logout</a>
+	</div>
+
+	<div class="header">
+	<h1>Book a room</h1>
+	</div>
+
+	<div class="container">
+	  <div class="row">
+		<div class="col-8 offset-3">
+			<div id='calendar'></div>
+		</div>
+	  </div>
+	</div>
+
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+
+
+		<form>
+		  <div class="modal-header">
+			<h5 class="modal-title">Modal title</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+		  </div>
+		  <div class="modal-body">
+			  <div class="form-group">
+				<label for="startDate">Start Date</label>
+				<label class="form-control" aria-disabled="true" id="startDate"> </label>
+			  </div>
+			  <div class="form-group">
+				<label >End Date</label>
+				<label class="form-control" aria-disabled="true" id="endDate"> </label>
+			  </div>
+			  <div class="form-group">
+				<label>Rooms</label>
+				<select id="os" class="form-control">
+					<option value="1">1</option>
+  					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+				</select>
+			  </div>
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			<button type="button" class="btn btn-primary" onclick="submitPressed()">Reserve</button>
+		  </div>
+		</form>
+
+		</div>
+	  </div>
+	</div>
+
+  </body>
+</html>
