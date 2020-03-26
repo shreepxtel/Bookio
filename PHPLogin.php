@@ -1,3 +1,7 @@
+//this is an outdated tester of our code during development, final version is authenticate.php
+
+
+
 <?php
 session_start();
 
