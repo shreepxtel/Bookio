@@ -1,20 +1,20 @@
 <?php
 
-  function OpenConn()
+  function OpenConn() //creating a function for opening connection to db
   {
-    $dbhost = "127.0.0.1";
-    $dbuser = "root";
-    $dbpass = "";
-    $dbname = "bookio";
+    $dbhost = "127.0.0.1"; //this is the db server (localhost)
+    $dbuser = "root"; //this is the db username
+    $dbpass = ""; //db password (there isnt one)
+    $dbname = "bookio"; //name of database so we know which one to connect to
 
-    $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+    $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname); //assigning our connection to a variable
 
-    return $conn;
+    return $conn;//returning the variable so function can be used
   }
 
-  function CloseConn($conn)
+  function CloseConn($conn) //creating a function for closing connection with db
   {
-    $conn -> close();
+    $conn -> close(); //closing connection 
   }
 
  ?>
