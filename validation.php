@@ -1,5 +1,5 @@
-//This is similar to authentication.php as at the time of trying to get the database to work with the system.
-//We were trying two separate methods where both work. But put this on the side as only one was needed.
+<!--This is similar to authentication.php as at the time of trying to get the database to work with the system.
+We were trying two separate methods where both work. But put this on the side as only one was needed.-->
 
 <?php
 
