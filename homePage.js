@@ -1,3 +1,4 @@
+//This is the functionality behind the live time which appears on the home page at the top left.
 function startTime() {
   var today = new Date();
   var h = today.getHours();
@@ -9,7 +10,9 @@ function startTime() {
   var t = setTimeout(startTime, 500);
 }
 
+//This section is to calculate the minutes and seconds.
 function checkTime(i) {
-  if (i < 10) {i = "0" + i};
+  if (i < 10) {
+    i = "0" + i};
   return i;
 }
