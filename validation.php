@@ -9,14 +9,14 @@ $con = mysqli_connect('localhost', 'root', '');//Connects the system with the lo
 
 mysqli_select_db($con, 'userregistration');
 
-$name = $_POST['user'];
+$name = $_POST['user'];//Gets the values posted from form.
 $pass = $_POST['password'];
 
 $s = " select * from usertable where name = '$name' && password = '$pass'";//Selects the specific table to get the data from, from the database.
 
-$result = mysqli_query($con, $s);
+$result = mysqli_query($con, $s); //Running the query on database.
 
-$num = mysqli_num_rows($result);
+$num = mysqli_num_rows($result); //Gets value for number of matching rows back.
 
 if($num == 1) {
   header('location:homePage2.php');//If user enters already existing user data. Then it takes them to the home page.
