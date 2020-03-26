@@ -8,11 +8,11 @@
 <body>
 <!--This is the section which we took from my part to include in loginPage.html along with the css link above known as login.css
 We thought this to look better design wise and more useful as it covers login and register on the same page. The lines we took start
-from line 12 to 43-->
+from line 12 to 45-->
   <div class="container">
     <div class="login-box">
     <div class="row">
-      <div class="col-md-6 login-left">
+      <div class="col-md-6 login-left"><!--For the Login section-->
         <h2> Login Here </h2>
         <form action="validation.php" method="post">
           <div class="form-group">
@@ -27,7 +27,7 @@ from line 12 to 43-->
         </form>
   </div>
 
-  <div class="col-md-6 login-right">
+  <div class="col-md-6 login-right"><!--For the Register section-->
     <h2> Register Here </h2>
     <form action="registration.php" method="post">
       <div class="form-group">
