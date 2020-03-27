@@ -18,7 +18,9 @@ Step 6: In your browser type localhost/nameOfYourFolderIn htdocs/loginPage.html
 
 if done correctly you should now be at our login page, ready to use the service
 
-<b>Usage</b>: ADD SCREENSHOTS OF WEBSITE IN ACTION
+<b>Usage</b>: 
+Login Page: ![](readmePics/loginpage.png)
+
 
 
 
