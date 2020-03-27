@@ -18,11 +18,12 @@ Step 6: In your browser type localhost/nameOfYourFolderIn htdocs/loginPage.html
 
 if done correctly you should now be at our login page, ready to use the service
 
-<b>Usage</b>: 
-Login Page: ![](readmePics/loginpage.png)
-
-
-
+Images of BookIO:<br>
+Login Page:<br> ![](readmePics/loginpage.PNG)
+Home Page:<br> ![](readmePics/homepage.PNG)
+Room Booking:<br> ![](readmePics/roombooking.PNG)
+Computer Booking:<br> ![](readmePics/computerbooking.PNG)
+Gallery:<br> ![](readmePics/gallery.PNG)
 
 </b>Contributing</b>: Larger projects often have sections on contributing to their project, in which contribution instructions are outlined. Sometimes, this is a separate file. If you have specific contribution preferences, explain them so that other developers know how to best contribute to your work. To learn more about how to help others contribute, check out the guide for setting guidelines for repository contributors.
 
