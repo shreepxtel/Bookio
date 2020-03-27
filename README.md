@@ -9,7 +9,7 @@ Step 2: navigate to folder that xampp installed to and find the htdocs folder, e
 
 Step 3: create a folder in htdocs to hold all of our app's files e.g C:\Users\jackc\Installed Software\XAMPP\htdocs\loginSystem
 
-Step 4: download and unzip our bookIO.rar into the folder you made in htdocs
+Step 4: download and unzip our bookIO.rar into the folder you made in htdocs. bookIO.rar can be found in 'main' in repository
 
 Step 5: start xampp, then start apache and mysql from the xampp control panel
 
